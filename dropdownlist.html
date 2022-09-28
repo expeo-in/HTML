@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdownlist</title>
+</head>
+<body>
+    <h1>Dropdownlist</h1>
+    <form method="get">
+        <label>Country</label>
+        <select name="country" id="country" multiple size="10">
+            <option value="">Select country</option>
+            <optgroup label="Asian">
+                <option value="1" selected>India</option>   
+                <option value="3">Pakistan</option>   
+            </optgroup>
+            <optgroup label="West">
+                <option value="2" selected>US</option>   
+                <option value="2">Canada</option>   
+            </optgroup>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

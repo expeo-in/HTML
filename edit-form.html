@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Form</title>
+</head>
+<body>
+    <h1>Edit Form</h1>
+    <form method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <input type="hidden" value="101" id="userid" name="userid">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" value="Vijay Kumar">
+            </div>
+            <div>
+                <input type="checkbox" id="graduate" name="graduate" value="true" checked>
+                <label for="graduate">Graduate</label>
+            </div>
+            <div>
+                Gender
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="trasngender" name="gender" value="trasngender">
+                <label for="trasngender">trasngender</label>
+            </div>
+            <div>
+                Country
+                <select name="country">
+                    <option value="in">India</option>
+                    <option value="us" >US</option>
+                    <option value="pk" selected>Pakistan</option>
+                </select>
+            </div>
+            <div>
+                State
+                <input type="text" list="statelist" value="TN">
+                <datalist id="statelist">
+                    <option>TN</option>
+                    <option>AP</option>
+                </datalist>
+            </div>
+            <div>
+                Resume
+                <textarea style="width:100px;height:100px">Personal Data</textarea>
+            </div>        
+        </fieldset>
+        <br><br>
+        <fieldset>
+            Account Information
+            <div>
+                <label for="username">username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div>
+                <label for="username">password:</label>
+                <input type="text" id="password" name="username">
+            </div>
+        </fieldset>
+        <div>
+            <!-- <input type="submit"> -->
+            <!-- <button><strong>Submit</strong><img src="images/sky.jpg" style="width:50px;height:50px"></button> -->
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
