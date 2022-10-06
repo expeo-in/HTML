@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 26px;
+        }
+        
+        li {
+            background-color: white;
+        }
+        ul > li {
+            background-color: yellow;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        #div2  {
+            background-color: yellow;
+        }
+        #div2 p {
+            background-color: white;
+        }
+        h1 ~ p {
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>para before div</p>
+    <h1>CSS Combinators</h1>
+    <p>another para</p>
+    <div>
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3
+            <ul>
+                <li>
+                    <p>para 4</p>
+                </li>
+            </ul>
+        </p>
+    </div>
+    <ul>
+        <li>
+            item 1
+            <ol>
+                <li>item 1-1</li>
+                <li>item 1-2</li>
+                <li>item 1-3</li>
+            </ol>
+        </li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+    <p>para after div</p>
+
+    <div id="div2">
+        <p>div 2 para 1</p>
+        <p>div 2 para 2</p>
+        <p>div 2 para 3</p>
+    </div>
+    <p>para</p>
+</body>
+</html>

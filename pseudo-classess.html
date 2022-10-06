@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        body {
+            font-size: 26px;
+        }
+        a:link{
+            color: lightblue;
+        }
+        a:visited {
+            color: orange;
+        }
+        a:hover, h1:hover, button:hover, a:focus, input:focus{
+            background-color: cadetblue;
+        }
+        a:active {
+            background-color: red;
+        }
+        
+        (from top - bottom)
+        first-child
+        first-of-type
+        nth-child - 
+        nth-of-type(n)
+
+        (from bottom - top)
+        last-child
+        last-of-type
+        nth-last-child(
+        nth-last-of-type((n)
+        
+        
+        #section1 :first-child {
+            color: red;
+        }
+        #section1 :nth-child(1) {
+            background-color: lightgray;
+        }
+        /*
+        #section1 :nth-child(even) {
+            background-color: gray;
+        }
+        
+
+        :empty {
+            background-color: yellow;
+        }
+
+        #section1 :not(p) {
+            background-color: brown;
+        }
+
+        .product-card {
+            border: 1px solid black;
+        }
+        .product-card .head {
+            background-color: lightblue;
+        }
+        .product-card .desc {
+            width: 200px;
+            height: 200px;
+            background-color: navy;
+        }
+        .product-card :empty {
+            height: 0px;
+        }
+        */
+        :checked {
+            width: 100px;
+            height: 100px;
+        }
+        :disabled {
+            
+        }
+        :enabled {
+            
+        }
+        input:read-only {
+            background-color: gray;
+        }
+        input:read-write {
+            background-color: lightblue;
+        }
+        input:invalid {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <form>
+        <input type="email" name="email">
+        <button type="submit">submit</button>
+    </form>
+    <div><a href="index.html">Home Page</a></div>
+    <div><a href="img.html">Images</a></div>
+    <div><a href="https://www.google.com" target="_blank">Google</a></div>
+    <div><a href="https://www.microsoft.com" target="_blank">Microsoft</a></div>
+    
+    <section id="section1">
+        <p>para 1</p> 
+        <p>para 2</p>
+        <p>para 3</p>
+        <p>para 4</p>
+        <p>para 5</p>
+        <p>para 6</p>
+        <p>para 7</p>
+        <p>para 8</p>
+    </section>
+
+    <div class="product-card">
+        <h1 class="heaad">Product 1</h1>
+        <p class="desc">Product descrption</p>
+    </div>
+    <div class="product-card">
+        <h1 class="heaad">Product 2</h1>
+        <p class="desc"></p>
+    </div>
+
+
+    <form>
+        <input type="checkbox" checked>Active
+        <div>Username<input type="text" name="username" value="vijay" disabled></div>
+        <div>Password<input type="text" value="" required></div>
+
+        <div>Full Name<input type="text"  name="fullname" value="Vijay Kumar" readonly></div>
+        <div>Email<input type="email"  name="email"></div>
+        <div>Age<input type="number"  name="age" min="18" max="60"></div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

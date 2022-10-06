@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        * {
+            font-family: 'Verdana';
+            font-size: 26px;
+        }
+        h1, h2, h3, #heading, .products, [target] {
+            
+        }
+        h1 {
+            color: orange;
+            font-size: larger;
+            
+        }
+        h2 {
+            color: brown;
+        }
+        h3 {
+            color:blueviolet;
+            font-size: medium;
+        }
+        li {
+            color:chocolate;
+        }
+        #heading2 {
+            color:crimson;
+        }
+        div.products {
+            background-color: #eee;
+        }
+        p.products {
+            background-color: cyan;
+        }
+        .news {
+            background-color: lightgreen;
+        }
+        [target] {
+            color: yellow;
+        }
+        a[target] {
+            color: palevioletred;
+        }
+        a[target="_blank"] {
+            color: palevioletred;
+        }
+        a[href="https://www.microsoft.com"] {
+            color: red;
+        }
+        a[href*="microsoft"][href*="https"] {
+            color: darkblue;
+        }
+        a[href*="microsoft"][target="_blank"] {
+            color: darkblue;
+        }
+        a[href^="https"] {
+            color: darkblue;
+        }
+        a[href$=".com"] {
+            color: brown;
+        }
+
+        .heading {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: black; font-size: large">CSS Basics</h1>
+
+    <h2>CSS Selectors</h2>
+    <ul>
+        <li>Element</li>
+        <li>Id</li>
+        <li>Class</li>
+        <li>Attribute</li>
+        <li>Relational</li>
+        <li>Pseudo Classes</li>
+        <li>Pseduo Elements</li>
+    </ul>
+
+    <h3>Element Selector</h3>
+    Use element name to specify the styles
+
+    <h3 id="heading2">Id Selector</h3>
+
+    <h3 class="heading">Class Selector</h3>
+    <section>
+        <h2>Products</h2>
+        <div class="products">
+            <h3>Mobile</h3>
+            <p>Product Description</p>
+        </div>
+        <div class="products">
+            <h3>TV</h3>
+            <p>Product Description</p>
+        </div>
+        <div class="products">
+            <h3>Laptop</h3>
+            <p>Product Description</p>
+        </div>
+    </section>
+    <section>
+        <h2>News</h2>
+        <div class="news">
+            <h3>News Heading</h3>
+            <p>News Description</p>
+        </div>
+        <div class="news">
+            <h3>News Heading</h3>
+            <p>News Description</p>
+        </div>
+        <div class="news">
+            <h3>News Heading</h3>
+            <p>News Description</p>
+        </div>
+    </section>
+
+    <a href="index.html">Home</a>
+    <a href="https://www.google.com" target="_blank">Go to Google</a>
+    <a href="http://www.microsoft.com" target="_blank">Go to Microsoft</a>
+    <form target="_blank">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+    </form>
+    <br><br>
+    <p class="products">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, placeat voluptas? Necessitatibus excepturi, deleniti consectetur tempore officia sapiente eos corrupti maiores explicabo soluta earum quam! Velit, fugit fuga officia inventore nam nihil minima quas, ipsum illum totam reiciendis vel dolore nostrum aperiam asperiores cum facere ut et veritatis ex architecto.
+    </p>
+</body>
+</html>
