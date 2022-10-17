@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo Elements</title>
+    <style>
+        p::first-letter {
+            font-size: 26px;
+            color: red;
+        }
+        p::first-line {
+            font-size: 26px;
+            color: red;
+        }
+        ::selection {
+            background-color: pink;
+        }
+        h1::before {
+          content: url(images/smiley.gif);  
+        }
+        h1::after {
+          content: url(images/smiley.gif);  
+        }
+        #list1 ::marker {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseduo Elements</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ut quia illo ipsa eius reiciendis, quidem sed deserunt quam voluptas necessitatibus obcaecati totam quos. Exercitationem, quod perspiciatis repellendus eius sunt sapiente nesciunt officia provident quidem nulla ex nam deleniti at amet eum optio in, aliquid sit voluptas inventore. In, eaque ipsa libero illum deserunt qui! Dolore corporis ipsum laborum animi fugit aliquam provident qui sequi explicabo at eaque ullam quas enim odio, veniam vel quaerat quidem. Assumenda exercitationem consequatur, neque aspernatur impedit fuga dolorum nisi. Maxime optio sit illo vero aperiam perferendis voluptate laborum possimus pariatur iste architecto omnis, ducimus quae rem fuga repellat voluptates earum quas repudiandae nemo odio aliquam obcaecati! Corrupti sunt pariatur consequuntur dolorum nostrum cumque ratione eum corporis aut temporibus ipsa provident ut distinctio, inventore quidem voluptatibus! Pariatur ea quis sint, expedita atque similique deleniti et quam. Qui optio ipsum asperiores laudantium aut, aspernatur excepturi repellendus, veniam architecto quas temporibus. Labore saepe voluptates assumenda expedita velit nobis eligendi accusamus perspiciatis? Incidunt cumque delectus quidem ducimus maiores odit repellendus! Ducimus est dolorem vitae harum, nam quas accusamus itaque pariatur possimus consequuntur quidem, quos nobis dicta praesentium, earum ipsam deleniti architecto non modi eius eaque saepe laborum ut!</p>
+    <ul id="list1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ul class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ol>
+</body>
+</html>

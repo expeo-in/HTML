@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #d1 {
+            width: 300px;
+            height: 200px;
+            border: 5px solid orange;
+            padding: 10px; 
+        }
+        #d2 {
+            width: 300px;
+            height: 200px;
+            border: 8px solid orange;
+            padding: 20px; 
+        }
+        p {
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto ratione ipsa ab recusandae. Eaque ullam ipsum hic blanditiis deserunt accusantium ratione alias quam, placeat repellendus excepturi aut aliquid debitis officia, nisi laudantium, aperiam assumenda adipisci vero omnis libero maiores. Nulla assumenda ut fuga aut, magnam ipsa ex mollitia doloribus.</div>
+    <br>
+    <div id="d2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iusto ratione ipsa ab recusandae. Eaque ullam ipsum hic blanditiis deserunt accusantium ratione alias quam, placeat repellendus excepturi aut aliquid debitis officia, nisi laudantium, aperiam assumenda adipisci vero omnis libero maiores. Nulla assumenda ut fuga aut, magnam ipsa ex mollitia doloribus.</div>
+    <!--
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-right: 25px;
+        padding-bottom: 30px;
+
+        padding: 40px 30px 20px 10px;
+
+        margin-bottom: 10px;
+            margin-top: 15px;
+            margin-right: 5px;
+            margin-left: 20px;
+
+            actual width = border-left + padding-left + content width + padding right + border-right;
+    actual width == 5 + 10 + 300 + 10 + 5;
+    actual width == 330;
+
+    actual height = border-top + padding-top + content-height + padding-bottom + border-bottom;
+    actual height = 5 + 10+ 200 + 10 + 5
+    actual height = 230;
+
+    330 x 230
+    356 * 256
+
+    300 - padding-left - border-left - padding-right - border-right 
+    300 - 10 - 5 - 10 - 5
+    
+    270
+
+    height -  padding-top - border-top - padding-bottom - border-bottom
+    200 - 30
+    170
+
+    box-sizing: border-box (includes content border and padding). 
+    content width and height is adjusted based on border and padding
+
+    box-sizing: content-box only for content (excludes border and padding) 
+    -->
+    
+
+    
+</body>
+</html>

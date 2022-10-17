@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        div {
+            color: orange;
+        }
+        body {
+            font-size: 26px;
+        }
+        p {
+            color: red;
+        }
+        .para {
+            color: blue;
+        }
+        #p5 {
+            color: green;
+        }
+        #section1 {
+            color: aqua
+        }
+
+        #section1 {
+            color: yellowgreen;
+        }
+        #section1 div {
+            color: lightgreen
+        }
+        #section1 p {
+            color: lightgreen
+        }
+
+        .sections p {
+            color: navy;
+        }
+        .sections div {
+            color: navy
+        }
+
+        section p {
+            color:blueviolet;
+        }
+
+        p {
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Specificity</h1>
+    <div>div 1</div>
+    <p>para1</p>
+    <p class="para">para2</p>
+    <p>para3</p>
+    <p class="para">para4</p>
+    <p id="p5" class="para">para 5</p>
+    <p class="para">para 6</p>
+    <section class="sections">
+        <h2>Section 2</h2>
+        <p>para</p>
+        <div>div</div>
+    </section>
+    <section id="section1" class="sections">
+        <h2>Section 1</h2>
+        <p>Section para</p>
+        <div>div inside section</div>
+    </section>
+    <div>
+        <section>
+            <h2>Section 3</h2>
+            <p>para</p>
+        </section>
+    </div>
+    
+
+</body>
+</html>

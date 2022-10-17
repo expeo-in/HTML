@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section p {
+            color:blueviolet;
+        }
+        .para {
+            color: red;
+        }
+        .cat1 section p {
+            color: yellow;
+        }
+        #div1 section p  {
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        div 1
+        <section>
+            <h2>Section 1</h2>
+            <p>para</p>
+        </section>
+        <section>
+            <h2>Section 2</h2>
+            <p class="para">para</p>
+        </section>
+        <section>
+            <h2>Section 3</h2>
+            <p>para</p>
+        </section>
+    </div>
+    <hr>
+    <div class="cat1" id="div1">
+        div 2
+        <section>
+            <h2>Section 1</h2>
+            <p>para</p>
+        </section>
+        <section>
+            <h2>Section 2</h2>
+            <p class="para">para</p>
+        </section>
+        <section>
+            <h2>Section 3</h2>
+            <p>para</p>
+        </section>
+    </div>
+</body>
+</html>
