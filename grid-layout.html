@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display:  grid;
+            grid-template-areas: 
+            "header header header" 
+            "sidebar content ad" 
+            "footer footer footer";
+            gap: 10px;
+        }
+        .container div {
+            background-color: lightblue;
+            height: 100px;
+
+        }
+        #d1 {
+            grid-area: header;
+        }
+        #d2 {
+            grid-area: sidebar;
+        }
+        #d3 {
+            grid-area: content;
+        }
+        #d4 {
+            grid-area: ad;
+        }
+        #d5 {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="d1">header content</div>
+        <div id="d2">sidebar content</div>
+        <div id="d3">main conent</div>
+        <div id="d4">ad  content</div>
+        <div id="d5">footer content</div>
+    </div>
+</body>
+</html>

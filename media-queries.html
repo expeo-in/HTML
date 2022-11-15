@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/smallscreen.css" media="screen and (max-width: 700px)">
+    <link rel="stylesheet" href="css/widescreen.css" media="screen and (min-width: 700px)">
+    <style>
+        /*
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .box-one {
+            background-color: lightblue;
+        }
+        .box-two {
+            background-color: lightgreen;
+        }
+        @media screen and (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+        */
+        @media screen and (max-width: 576px) {
+
+        }
+        @media screen and (min-width: 576px) {
+            body {
+                background-color: red;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            body {
+                background-color: green;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eius animi vitae suscipit ea cupiditate quia veniam deleniti laboriosam omnis, est molestiae rerum recusandae! Blanditiis hic magni dolor voluptatem deserunt dolore obcaecati nostrum est harum nesciunt consequuntur necessitatibus reprehenderit, possimus beatae tempora in id doloremque, ullam quam numquam labore praesentium?</div>
+        <div class="box box-two">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit deserunt corporis deleniti placeat sapiente eaque nam sit? Quos culpa, eius molestiae ex voluptas quidem iste expedita error voluptatibus repellat dolores, beatae, adipisci ut quisquam nemo dolor optio tempore. Architecto maiores quos fuga temporibus animi possimus sapiente corrupti consectetur incidunt quia!</div>
+    </div>
+</body>
+</html>

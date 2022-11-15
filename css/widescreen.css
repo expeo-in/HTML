@@ -1,0 +1,9 @@
+.container {
+    flex-direction: row;
+}
+.box-one {
+    background-color: lightcoral;
+}
+.box-two {
+    background-color: lightpink;
+}

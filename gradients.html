@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+
+        diagonal
+        to bottom left(from top right to bottom left)
+        to bottom right (from top left to bottom right)
+        to top right (from bottom left to top right)
+        to top left(from bottom right to top left)
+        
+        */
+        body {
+            
+        }
+        .linear {
+            background: rgb(0,36,11);
+background: linear-gradient(62deg, rgba(0,36,11,1) 0%, rgba(9,121,35,1) 33%, rgba(255,0,40,1) 100%);
+            width: 500px;
+            height: 300px;
+        }
+        .radial {
+            background: radial-gradient(circle at bottom right, red, yellow 50%, black 70%);
+            /*background-color: red;*/
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gradients</h1>    
+    <div class="linear"></div>
+    <!-- <div class="radial"></div> -->
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+        /*
+        grid-template-rows: repeat(3, 150px);
+        grid-template-columns: repeat(2, 150px);
+        */
+        .container {
+            border: 2px solid gray;
+            display: grid;
+            grid-template-columns: 150px 150px;
+            
+            justify-content: start; /* entire grid - horizonatal axis */
+            align-content: start; /* entire grid - vertical axis */
+
+
+            justify-items: stretch; /* grid item - horizontal */
+            align-items: stretch; /* grid item - vertical */
+            
+
+            height: 90vh;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+        }
+        .box-one {
+            grid-column: 1;
+            grid-row: 2;
+            background-color: red;
+        }
+        .box-two {
+            
+            background-color: green;
+        }
+        .box-three {
+            background-color: blue;
+        }
+        .box-four {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-one">A</div>
+        <div class="box box-two">B</div>
+        <div class="box box-three">C</div>
+        <div class="box box-four">D</div>
+        <div class="box box-two">E</div>
+        <div class="box box-three">F</div>
+        <div class="box box-one">A</div>
+        <div class="box box-two">B</div>
+        <div class="box box-three">C</div>
+        <div class="box box-four">D</div>
+        <div class="box box-two">E</div>
+        <div class="box box-three">F</div>
+    </div>
+    <!--
+        grid-column-start
+        grid-column-end
+        grid-column
+
+        grid-row-start
+        grid-row-end
+        grid-row
+
+        grid-area: grid-row-start grid-column-start grid-row-end grid-column-end
+
+        width
+        heigh
+    -->
+</body>
+</html>

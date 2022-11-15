@@ -1,6 +1,52 @@
+@font-face {
+    font-family: xmas;
+    src: url(fonts/christmas/christmas.otf);
+    font-style: normal;
+    font-display: fallback; /* auto, block, swap, fallback, optional */
+}
+/*
+@font-face {
+    font-family: xmas;
+    src: url(fonts/christmas/christmas-italic.otf);
+    font-style: italic;
+}
+@font-face {
+    font-family: xmas;
+    src: url(fonts/christmas/christmas-bold.otf);
+    font-weight: bold;
+}
+*/
+body {
+    
+}
+
 h1 {
     color: red !important;
 }
 p {
+    font-family: xmas;
+    font-style: italic;
     color: blue;
 }
+
+.css-sprite-delivery-truck
+{
+background:url('../images/css-sprite-combined.png') 0px -0px;
+width:128px;height:128px;
+display:inline-block;
+}
+
+.css-sprite-black-friday
+{
+background:url('../images/css-sprite-combined.png') -128px -0px;
+width:128px;height:128px;
+display:inline-block;
+}
+
+.css-sprite-best-seller
+{
+background:url('../images/css-sprite-combined.png') -256px -0px;
+width:128px;height:128px;
+display:inline-block;
+}
+

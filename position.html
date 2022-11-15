@@ -20,11 +20,20 @@
         #d2 {
             background-color: green;
             position: relative;
-            top: 0px;
-            left: 0px;
+            top: 100px;
+            left: 50px;
+            z-index: -10;
         }
         #d3 {
             background-color: blue;
+            z-index: 0;
+        }
+        #d4 {
+            background-color: lightgray;
+            position: relative;
+            top: -100px;
+            left: 100px;
+            z-index: -2;
         }
         main {
             border: 5px solid gray;
@@ -48,6 +57,7 @@
             <div id="d1">div 1</div>
             <div id="d2">div 2</div>
             <div id="d3">div 3</div>
+            <div id="d4">div 4</div>
         </article>
         
     </main>

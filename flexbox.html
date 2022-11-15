@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            border: 5px solid lightgray;
+            height: 100vh;
+            justify-content: flex-start; /* align item along main axis */
+            align-items: flex-start; /* align item along cross axis */
+        }
+        .boxes {
+            background-color: lightblue;
+            width: 5rem;
+            height: 5rem;
+            margin: 10px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .box-one {
+            flex-shrink: 2;
+        }
+        .box-two {
+        }
+        .box-three {
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="boxes box-one">1</div>
+        <div class="boxes box-two">2</div>
+        <div class="boxes box-three">3</div>
+        
+    </div>
+    <!--
+        flex: 1 (grow)
+        flex: 1 1 (grow shrink)
+        flex: 1 10rem (grow flex-basis)
+        flex: 1 1 10rem (grow shrink flex-basis)
+    -->
+    
+</body>
+</html>

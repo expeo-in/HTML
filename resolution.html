@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        img1 {
+            width: 500px;
+        }
+        img2 {
+            width: 100vw;
+        }
+        .fixed-width {
+            width: 320px;
+        }
+        .relative-width {
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Images</h2>
+    <h2>Normal Size</h2>
+    <img src="images/rose@1x.jpg" alt="">
+
+    <h2>Scale Factor Image</h2>
+    <img src="images/rose@1x.jpg" class="fixed-width" srcset="images/rose@1x.jpg 1x, images/rose@1.25x.jpg 1.25x, images/rose@2x.jpg 2x, images/rose@3x.jpg 3x">
+    
+
+    <h2>Different Size Image</h2>
+    <img src="images/rose@1x.jpg" class="relative-width" srcset="images/rose@1x.jpg 320w, images/rose@1.25x.jpg 400w images/rose@2x.jpg 640w, images/rose-large.jpg 1920w">
+
+    <h2>Different Width based on Device</h2>
+    <img src="images/rose@1x.jpg" 
+    srcset="images/rose@1x.jpg 320w, images/rose@1.25x.jpg 400w images/rose@2x.jpg 640w, images/rose-large.jpg 1920w"
+    sizes="(max-width: 420px) 100vw, (max-width: 768px) 50vw, 30vw"
+    >
+</body>
+</html>

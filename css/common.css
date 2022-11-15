@@ -1,0 +1,19 @@
+body {
+    font-size: 1rem;
+}
+.box {
+    padding: 10px;
+    margin: 10px;
+}
+.container {
+    display: flex;
+}
+@media print {
+    body {
+        font-size: 30pt;
+    }
+    .box {
+        padding: .5cm;
+        margin: .5cm;
+    }
+}

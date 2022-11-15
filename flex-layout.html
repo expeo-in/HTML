@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            border: 2px solid blue;
+            height: 80vh;
+            width: 90vw;
+            justify-content: center; /* align items along main axis */
+            margin: 10px;
+        }
+        .box {
+            background-color: lightblue;
+            margin: 10px;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            border: 2px solid gray;
+            flex-grow: 1;
+        }
+        .sidebar, .ad {
+            flex-basis: 100px;
+            flex-shrink: 0;
+        }
+        .content {
+            flex-grow: 1;
+        }
+        .header, .footer {
+            flex-basis: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">Header</div>
+        <div class="main">
+            Main
+            <div class="box sidebar">Sidebar</div>
+            <div class="box content">Content</div>
+            <div class="box ad">Ad</div>
+        </div>
+        <div class="box footer">Footer</div>
+    </div>
+</body>
+</html>
