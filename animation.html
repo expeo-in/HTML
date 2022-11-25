@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: 10px;
+            
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: 10px;
+        }
+        .box-slide-animation {
+            /*
+            animation-name: animate-box;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: both;
+            */
+            animation: animate-box 3s ease reverse;
+        }
+
+        /*
+        @keyframes example {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(200px) rotateZ(150deg);
+            }
+        }*/
+
+        @keyframes animate-box {
+            0% {
+                background-color: red;
+            }
+            100% {
+                background-color: blue;
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="animate__animated animate__backInDown">Animations</h1>
+    <div class="box1 animate__animated animate__slideInLeft"></div>
+    
+</body>
+</html>

@@ -17,11 +17,11 @@
 }
 */
 body {
-    
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
-    color: red !important;
+    color: red;
 }
 p {
     font-family: xmas;
@@ -31,9 +31,10 @@ p {
 
 .css-sprite-delivery-truck
 {
-background:url('../images/css-sprite-combined.png') 0px -0px;
-width:128px;height:128px;
-display:inline-block;
+    background:url('../images/css-sprite-combined.png') 0px -0px;
+    display:inline-block;
+    width:128px;
+    height:128px;
 }
 
 .css-sprite-black-friday
@@ -48,5 +49,56 @@ display:inline-block;
 background:url('../images/css-sprite-combined.png') -256px -0px;
 width:128px;height:128px;
 display:inline-block;
+}
+
+.item {
+    font-size: 50px;
+}
+
+
+.nav-item {
+    color: orange;
+}
+
+.nav-head {
+}
+
+.nav {
+    
+}
+
+/*
+div.nav > ul.items > li.item {
+
+}
+*/
+
+:root {
+    --primary-bgcolor: lightgreen;
+    --primary-forecolor: brown;
+    --radius-width: 50px;
+    --font-size: 20px;
+}
+
+button {
+    --space-width: 10px;
+    --primary-bgcolor: yellow;
+    background-color: var(--primary-bgcolor);
+    color: var(--primary-forecolor);
+    border-radius: var(--radius-width);
+    margin: var(--space-width);
+    padding: var(--space-width);
+}
+
+div.box {
+    background-color: var(--primary-bgcolor);
+    color: var(--primary-forecolor);
+    border-radius: var(--radius-width);
+}
+
+@media screen and (min-width: 700px) {
+    :root {
+        --font-size: 30px;
+    }
 }
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            
+            
+        }
+        .container {
+            perspective: 200px;
+            perspective-origin: left;
+        }
+        .box {
+            background-color: orange;
+            transform: rotateX(40deg);
+        }
+        /*
+        .container:hover .box1 {
+            transform: rotateY(40deg);
+            
+        }
+        .container:hover .box2 {
+            transform: rotateY(40deg);
+        }
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Lorem ipsum dolor sit amet.</div>
+        <!-- <div class="box box2">Lorem ipsum dolor sit amet.</div> -->
+    </div>
+    <!--
+        scale
+            transform: scaleX(5);
+            transform: scaleY(5);
+            transform: scale(5);
+            transform: scale(5, 2);
+
+            transform: scaleZ(5);
+            transform: scale3d();
+        rotate
+            transform: rotate(-50deg);
+            transform: rotate(50deg);
+            
+            transform: rotateX(50deg);
+            transform: rotateY(50deg);
+            transform: rotateZ(50deg);
+            transform: rotate3d(x,y,z,angle);
+            
+            transform-origin: 0 0; //left top
+            transform-origin: 0 50%; //left center
+            transform-origin: 0 100%; //left bottom
+        skew - tilt
+            transform: skewX(15deg);
+            transform: skewX(-15deg);
+            transform: skewY(-15deg);
+            transform: skew(15deg, 20deg);
+        translate - move
+            transform: translateX(50px);
+            transform: translateY(50px);
+            transform: translate(50px, 50px);
+
+            transform: translateZ(50px);
+            transform: translate3d(50px, 50px, 50px);
+    -->
+</body>
+</html>

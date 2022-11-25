@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo {
+            max-width: 100%;
+        }
+
+        /* .pix {
+            max-width: 100%;
+            width: 100%;
+            height: 300px;
+
+        }
+
+        @media screen and (min-width: 501px) {
+            .pix {
+                background-image: url(images/elva-800w.jpg);
+            }    
+        }
+        .pix {
+            background-image: url(images/elva-480w.jpg);
+        }     */
+    </style>
+</head>
+<body>
+    <h1>Web P</h1>
+    <!-- <img src="images/rose@2x.webp"> -->
+    <picture>
+        <source type="image/webp" srcset="images/rose@2x.webp">
+        <source type="image/jpg" src="images/rose@2x.jpg">
+        <img src="images/rose@2x.jpg" alt="">
+    </picture>
+
+    <!-- <img src="images/elva-480w.jpg" class="photo" 
+    srcset="images/elva-480w.jpg 480w, images/elva-800w.jpg 800w"
+    sizes="(max-width: 500px) 480w, (min-width: 501px) 800w"
+    > -->
+
+    <picture>
+        <source media="(max-width:500px)" srcset="images/elva-480w.jpg">
+        <source media="(min-width:501px)" srcset="images/elva-800w.jpg">
+        <img src="images/elva-800w.jpg" alt="">
+    </picture>
+
+    <!-- <div class="pix"></div> -->
+</body>
+</html>
